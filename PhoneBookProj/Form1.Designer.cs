@@ -42,6 +42,9 @@
             this.Quitbutt = new System.Windows.Forms.Button();
             this.ErrorPhone = new System.Windows.Forms.Label();
             this.ErrorExist = new System.Windows.Forms.Label();
+            this.ToLongError = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -187,12 +190,55 @@
             this.ErrorExist.Text = "The Phone number is already taken";
             this.ErrorExist.Visible = false;
             // 
+            // ToLongError
+            // 
+            this.ToLongError.AutoSize = true;
+            this.ToLongError.BackColor = System.Drawing.Color.White;
+            this.ToLongError.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToLongError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ToLongError.Location = new System.Drawing.Point(148, 137);
+            this.ToLongError.Name = "ToLongError";
+            this.ToLongError.Size = new System.Drawing.Size(253, 26);
+            this.ToLongError.TabIndex = 13;
+            this.ToLongError.Text = "The phone number is to long";
+            this.ToLongError.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(154, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(207, 26);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Please enter a full name";
+            this.label5.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label6.Location = new System.Drawing.Point(167, 137);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(192, 26);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Phone number added";
+            this.label6.Visible = false;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(541, 519);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ToLongError);
             this.Controls.Add(this.ErrorExist);
             this.Controls.Add(this.ErrorPhone);
             this.Controls.Add(this.Quitbutt);
@@ -230,6 +276,9 @@
         private System.Windows.Forms.Button Quitbutt;
         private System.Windows.Forms.Label ErrorPhone;
         private System.Windows.Forms.Label ErrorExist;
+        private System.Windows.Forms.Label ToLongError;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
